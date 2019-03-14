@@ -1,0 +1,17 @@
+  const a = [
+    { name: 'Beth', age: 28 }, 
+    { name: 'Dan', age: 29 }, 
+    { name: 'Sunny', age: 25 }, 
+    { name: 'Zach', age: 28 }, 
+    { name: 'Magee', age: 36 }
+    ];
+
+  const m = a.reduce((x, y) => {
+      x.names.push(y.name);
+      x.ages.push(y.age);
+      return x;
+    }, { names: [], ages: [] });
+
+  console.log(m); //
+  //{ names: [ 'Beth', 'Dan', 'Sunny', 'Zach', 'Magee' ],
+  //ages: [ 28, 29, 25, 28, 36 ] }
